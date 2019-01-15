@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Baby_Mom</string>
+    <string name="email_hint">อีเมลล์ที่ลงทะเบียน</string>
+    <string name="password">รหัสผ่าน</string>
+    <string name="forgot_password">ลืมรหัสผ่าน?</string>
+    <string name="textbtn_login">เข้าสู่ระบบ</string>
+    <string name="create_account">คุณยังไม่เป็นสมัครชิกใช่มั้ย? ลงทะเบียนที่นี่</string>
+    <string name="text_with">หรือ</string>
+    <string name="login_with_facebook">เข้าสู้ระบบผ่าน Facebook</string>
+    <string name="textview_sigup">ลงทะเบียน</string>
+    <string name="sigup_textname">ชื่อ</string>
+    <string name="mail">อีเมลล์ของคุณ</string>
+    <string name="btn_submit">ยื่นคำร้อง</string>
+    <string name="confirmpassword">ยืนยันรหัสผ่าน</string>
+    <string name="textforgot">กรุณากรอกอีเมลล์ของคุณเพื่อที่เราจะส่งรหัสใหม่ให้คุณผ่านทางอีเมลล์</string>
+    <string name="open_drawer">open menu</string>
+    <string name="close_drawer">close menu</string>
+
+</resources>

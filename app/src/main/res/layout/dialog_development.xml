@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/topicsShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_padding_20dp"
+        android:textSize="@dimen/textsize_14sp"/>
+    <TextView
+        android:id="@+id/sideShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_padding_20dp"
+        android:layout_below="@+id/topicsShow"
+        android:textSize="@dimen/textsize_14sp"/>
+
+    <ImageView
+        android:id="@+id/imageview_dev"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/sideShow"
+        android:layout_margin="@dimen/margin_padding_20dp"/>
+
+    <EditText
+        android:id="@+id/date_dev"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageview_dev"
+        android:layout_alignTop="@id/imageview_dev"/>
+
+    <RadioGroup
+        android:id="@+id/check_dev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_padding_10dp"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/imageview_dev"
+        android:layout_alignBottom="@id/imageview_dev">
+
+        <RadioButton
+            android:id="@+id/yes_dev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ทำได้"
+            android:textSize="@dimen/textsize_14sp"/>
+
+        <RadioButton
+            android:id="@+id/no_dev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ทำไม่ได้"
+            android:textSize="@dimen/textsize_14sp"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textsize_14sp"
+        android:text="ยกเลิก"
+        android:layout_below="@+id/imageview_dev"
+        android:textColor="@color/red"
+        android:layout_margin="@dimen/margin_padding_10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textsize_14sp"
+        android:text="ตกลง"
+        android:layout_below="@+id/imageview_dev"
+        android:layout_alignRight="@+id/date_dev"
+        android:textColor="@color/blue"
+        android:layout_margin="@dimen/margin_padding_10dp"/>
+
+
+</RelativeLayout>

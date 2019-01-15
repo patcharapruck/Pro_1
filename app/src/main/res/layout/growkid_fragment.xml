@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageView_grow"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="centerInside"
+        android:background="@color/white">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/btnCaptureImage_grow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Capture Image" />
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/baby_calendar_grow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/ic_calendar" />
+
+        <EditText
+            android:id="@+id/textviewdate_grow"
+            style="@style/TextViewStyte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_padding_10dp"
+            android:layout_marginTop="@dimen/margin_padding_10dp"
+            android:layout_marginRight="@dimen/margin_padding_10dp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/weight_grown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_padding_10dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@mipmap/ic_weight"
+        android:drawablePadding="@dimen/margin_padding_10dp"
+        android:hint="น้ำหนัก(กิโลกรัม)"
+        android:inputType="number"
+        android:padding="@dimen/margin_padding_10dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/textsize_16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black" />
+
+    <EditText
+        android:id="@+id/height_grown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_padding_10dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@mipmap/ic_babyheight"
+        android:drawablePadding="@dimen/margin_padding_10dp"
+        android:hint="ส่วนสูง(เซนติเมตร)"
+        android:inputType="number"
+        android:padding="@dimen/margin_padding_10dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/textsize_16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black" />
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/grow_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_size"
+        android:layout_marginTop="@dimen/margin_padding_30dp"
+        app:cardBackgroundColor="@color/blue"
+        app:cardCornerRadius="25dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/growbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:text="ตกลง"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</ScrollView>

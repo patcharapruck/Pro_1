@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="@dimen/margin_padding_10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="แก้ไขข้อมูล"
+            android:textSize="14sp"
+            android:textColor="#000"
+            android:id="@+id/heading"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/heading"
+            android:text="แก้ไขข้อมูลชื่อผู้ใช้"
+            android:layout_marginTop="20dp"
+            android:textSize="14sp"
+            android:textColor="#ef7171"
+            android:id="@+id/texteditname"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/texteditname"
+            android:layout_marginTop="3dp"
+            android:background="@null"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:id="@+id/edit_name"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_padding_3dp"
+            android:background="@color/black"
+            android:layout_below="@+id/edit_name"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_name"
+            android:text="แก้ไขข้อมูลรหัสผ่าน"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:textColor="#ef7171"
+            android:id="@+id/texteditpass"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/texteditpass"
+            android:layout_marginTop="3dp"
+            android:background="@null"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:inputType="textPassword"
+            android:id="@+id/edit_pass"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_padding_3dp"
+            android:background="@color/black"
+            android:layout_below="@+id/edit_pass"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_pass"
+            android:text="ยืนยันรหัสผ่านใม่"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:textColor="#ef7171"
+            android:id="@+id/texteditconpass"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/texteditconpass"
+            android:layout_marginTop="3dp"
+            android:background="@null"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:inputType="textPassword"
+            android:id="@+id/edit_conpass"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_padding_3dp"
+            android:background="@color/black"
+            android:layout_below="@+id/edit_conpass"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_conpass"
+            android:text="รหัสผ่านเดิม"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:textColor="#ef7171"
+            android:id="@+id/textoldpass"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textoldpass"
+            android:layout_marginTop="3dp"
+            android:background="@null"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:inputType="textPassword"
+            android:id="@+id/edit_oldpass"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_padding_3dp"
+            android:background="@color/black"
+            android:layout_below="@+id/edit_oldpass"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="แก้ไข"
+            android:layout_below="@id/edit_oldpass"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textSize="18sp"
+            android:textColor="#33bbff"
+            android:id="@+id/action_ok"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ยกเลิก"
+            android:layout_below="@id/edit_oldpass"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="20dp"
+            android:textSize="18sp"
+            android:textColor="#33bbff"
+            android:id="@+id/action_cancel"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

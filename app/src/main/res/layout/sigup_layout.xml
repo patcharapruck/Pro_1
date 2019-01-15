@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_signup"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/margin_padding_20dp"
+        android:paddingRight="@dimen/margin_padding_20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <!--<ImageView-->
+                <!--android:id="@+id/img_logo"-->
+                <!--android:layout_width="150dp"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:background="@drawable/logo"-->
+                <!--android:layout_gravity="center"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginTop="@dimen/margin_padding_20dp"
+                    android:paddingLeft="@dimen/margin_padding_10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mail"
+                    style="@style/TextViewStyte" />
+
+                <TextView
+                    android:id="@+id/textview_email"
+                    android:layout_marginTop="@dimen/margin_padding_20dp"
+                    android:layout_marginLeft="@dimen/margin_padding_10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/margin_padding_10dp"
+                    style="@style/TextViewStyte2"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/sigup_emailid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_mail"
+                android:drawablePadding="@dimen/margin_padding_10dp"
+                android:inputType="textEmailAddress"
+                style="@style/Ed_text" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginTop="@dimen/margin_padding_3dp"
+                    android:paddingLeft="@dimen/margin_padding_10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/password"
+                    style="@style/TextViewStyte" />
+
+                <TextView
+                    android:id="@+id/textview_pass"
+                    android:layout_marginTop="@dimen/margin_padding_3dp"
+                    android:layout_marginLeft="@dimen/margin_padding_10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/margin_padding_10dp"
+                    style="@style/TextViewStyte2"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/sigup_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_launcher_password"
+                android:drawablePadding="@dimen/margin_padding_10dp"
+                android:inputType="textPassword"
+                style="@style/Ed_text" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginTop="@dimen/margin_padding_3dp"
+                    android:paddingLeft="@dimen/margin_padding_10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/confirmpassword"
+                    style="@style/TextViewStyte" />
+
+                <TextView
+                    android:id="@+id/textview_conpass"
+                    android:layout_marginTop="@dimen/margin_padding_3dp"
+                    android:layout_marginLeft="@dimen/margin_padding_10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/margin_padding_10dp"
+                    style="@style/TextViewStyte2"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/sigup_confirmpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_launcher_cfpassword"
+                android:drawablePadding="@dimen/margin_padding_10dp"
+                android:inputType="textPassword"
+                style="@style/Ed_text" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginTop="@dimen/margin_padding_3dp"
+                    android:paddingLeft="@dimen/margin_padding_10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sigup_textname"
+                    style="@style/TextViewStyte" />
+
+                <TextView
+                    android:id="@+id/textview_name"
+                    android:layout_marginTop="@dimen/margin_padding_3dp"
+                    android:layout_marginLeft="@dimen/margin_padding_10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/margin_padding_10dp"
+                    style="@style/TextViewStyte2"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/sigup_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_3dp"
+                android:drawableLeft="@mipmap/ic_launcher_username"
+                android:drawablePadding="@dimen/margin_padding_10dp"
+                style="@style/Ed_text" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+
+
+                <CheckBox
+                    android:id="@+id/checkcaptcha"
+                    android:layout_marginTop="@dimen/margin_padding_10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="คุณคือผู้ใช้หรือไม่"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:checked="false"/>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/signup_cardView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_size"
+                android:layout_marginTop="@dimen/margin_padding_30dp"
+                app:cardBackgroundColor="@color/blue"
+                app:cardCornerRadius="25dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/signupbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@android:color/transparent"
+                        android:text="@string/textview_sigup"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_20sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/ic_menu_home"
+        android:title="หน้าหลัก">
+
+    </item>
+    <item
+        android:id="@+id/menu_insertkid"
+        android:icon="@drawable/ic_menu_kid"
+        android:title="เพิ่มข้อมูลลูก">
+
+    </item>
+    <item
+        android:id="@+id/menu_grown"
+        android:icon="@drawable/ic_menu_grown"
+        android:title="การเจริญเติบโต">
+
+    </item>
+    <item
+        android:id="@+id/menu_evolution"
+        android:icon="@drawable/ic_menu_evolution"
+        android:title="พัฒนาการ">
+
+    </item>
+    <item
+        android:id="@+id/menu_injection"
+        android:icon="@drawable/ic_menu_injection"
+        android:title="วัคซีน">
+
+    </item>
+    <item
+        android:id="@+id/menu_nutrition"
+        android:icon="@drawable/ic_menu_nutrition"
+        android:title="โภชนาการ">
+
+    </item>
+    <item
+        android:id="@+id/menu_calendar"
+        android:icon="@drawable/ic_menu_calendar"
+        android:title="นัดหมาย">
+
+    </item>
+    <item
+        android:id="@+id/menu_commend"
+        android:icon="@drawable/ic_menu_commend"
+        android:title="คำแนะนำ">
+
+    </item>
+
+</menu>
